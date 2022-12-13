@@ -1660,12 +1660,15 @@ textarea.input {
   width: 4.5rem;
   height: 4.5rem;
   border-radius: 50%;
+  overflow: hidden;
 }
 
 .item-testimonials__image img {
   max-width: 100%;
   -o-object-position: center;
      object-position: center;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 
 .item-testimonials__text {
@@ -1750,14 +1753,12 @@ textarea.input {
           flex-direction: column;
 }
 
-.post__image {
+.post__image-ibg {
+  padding-bottom: 76.923077%;
+  /* 300/390 */
   border-radius: 4px;
   overflow: hidden;
   margin-bottom: 1rem;
-}
-
-.post__image img {
-  width: 100%;
 }
 
 .post__meta {
